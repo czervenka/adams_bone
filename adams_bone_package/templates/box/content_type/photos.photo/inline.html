@@ -1,0 +1,10 @@
+{% extends "box/inline.html" %}
+{% load photos %}
+
+{% block inline_figure_tag %}
+    {% ifequal align "center"%}style="width: 100%; text-align: center;"{% else %}style="width: {{ image.width }}px;"{% endifequal %}
+{% endblock %}
+
+{% block inline_figure_content %}
+    <img src="{{ image.url }}" alt="{{ object.title }}"  width="{{ image.width }}" height="{{ image.height }}">
+{% endblock %}

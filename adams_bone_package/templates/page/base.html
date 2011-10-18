@@ -1,0 +1,31 @@
+{# extends "index.html" #}
+{% load services %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block html_title %}{{ CURRENT_SITE.name }}{% endblock %}</title>
+</head>
+
+<body>
+    {% block category_title %}{{ category.title }}{% endblock %}
+<ul>
+{% block main_menu %}
+        {% menu_item "" "Homepage" "/" 0 %}
+        {% menu_item "/test" "Testovací rubrika" %}
+{% endblock %}
+</ul>
+
+<ul>
+{% block second_menu %}
+    {% menu_item "" "Submenu 1" "/" 0 %}
+    {% menu_item "" "Submenu 2" %}
+    {% menu_item "" "Submenu 3" %}
+    {% menu_item "" "Submenu 4" %}
+{% endblock %}
+</ul>
+
+{% block email %}{{ "info@example.com"|obfuscate }}{% endblock %}
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<article>
+    <h1><a href="{{ object.get_absolute_url }}">{{ object.title }}</a> </h1>
+    {% if object.photo %}
+        {% load photos %}
+        {% img 120x40 for object.photo as image %}
+        <p><a href=""><img src="{{ image.url }}" alt="{{ article.title }}" /></a></p>
+    {% endif %}
+    <aside>vytvořeno: {{ object.publish_from|date:"d.m.Y" }}</aside>
+    {% render object.description %}
+    <a href="{{ object.get_absolute_url }}">celý článek</a>
+</article>

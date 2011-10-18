@@ -1,0 +1,11 @@
+Django==1.3.1
+south>=0.7
+anyjson
+
+# PIL - this requirement has been moved to deb package
+django-tagging
+markdown2
+
+-e git+http://github.com/Almad/django-sane-testing.git#egg=djangosanetesting
+-e git+http://github.com/ella/django-markup.git#egg=djangomarkup
+-e git+http://github.com/czervenka/ella.git@future/django-1.3#egg=ella

@@ -1,0 +1,5 @@
+    {% block inline_box_content %}
+        <figure class="inline photo{% if align %} {{ align }}{% endif %}" {% block inline_figure_tag %}{% endblock %}>
+            {% block inline_figure_content %}{% endblock %}
+        </figure>
+    {% endblock %}

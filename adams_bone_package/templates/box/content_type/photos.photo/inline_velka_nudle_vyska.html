@@ -1,0 +1,12 @@
+{% extends "box/content_type/photos.photo/inline.html" %}
+{% load photos %}
+
+{% block inline_figure_tag %}
+    {% img inline_velka_nudle_vyska for object as image %}
+    {{ block.super }}
+{% endblock %}
+
+{% block inline_figure_content %}
+    {% img inline_velka_nudle_vyska for object as image %}
+    {{ block.super }}
+{% endblock %}
