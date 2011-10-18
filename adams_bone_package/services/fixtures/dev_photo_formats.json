@@ -1,0 +1,274 @@
+[
+    {
+        "pk": 19, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "article_head", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 210, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 600, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "article_listing", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 140, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 210, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "gallery_item_big", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 800, 
+            "nocrop": true, 
+            "flexible_height": true, 
+            "max_width": 800, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_mala_ctverec", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 90, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 90, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_mala_nudle_sirka", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 210, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 88, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_mala_obdelnik_sirka", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 60, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 90, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_mala_obdelnik_vyska", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 90, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 60, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_standard_ctverec", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 210, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 210, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_standard_nudle_sirka", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 88, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 210, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_standard_obdelnik_sirka", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 140, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 210, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_standard_obdelnik_vyska", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 210, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 140, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_velka_ctverec", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 619, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 619, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_velka_nudle_sirka", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 210, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 619, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_velka_nudle_vyska", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 600, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 210, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_velka_obdelnik_sirka", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 400, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 619, 
+            "resample_quality": 85
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "photos.format", 
+        "fields": {
+            "name": "inline_velka_obdelnik_vyska", 
+            "stretch": true, 
+            "flexible_max_height": null, 
+            "sites": [
+                1
+            ], 
+            "max_height": 900, 
+            "nocrop": false, 
+            "flexible_height": false, 
+            "max_width": 600, 
+            "resample_quality": 85
+        }
+    }
+]

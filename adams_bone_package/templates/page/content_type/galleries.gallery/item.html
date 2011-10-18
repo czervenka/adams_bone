@@ -4,7 +4,7 @@
 <!-- gallery -->
 <section class="gallery item">
     <a href="javascript: history.go(-1)">zpět</a><br>
-    {% img 800x600 for item.target as image %}
+    {% img gallery_item_big for item.target as image %}
     <img src="{{ image.url }}" alt="{% firstof item.target.title object.title %}">
     <h3>{{ item.target.title }}</h3
     {% render item.target.description %}
