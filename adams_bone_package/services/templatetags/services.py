@@ -22,7 +22,7 @@ def menu_item(context, item_path, title, url=None, with_subcategories=True):
         current_path = ''
 
     if with_subcategories:
-        selected = current_path.startswith(item_path)
+        selected = current_path.startswith(item_path[1:])
     else:
         selected = current_path = item_path
 
