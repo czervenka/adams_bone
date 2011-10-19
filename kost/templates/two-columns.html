@@ -94,6 +94,7 @@
 
 			<div class="left" id="main-left">
                 {% block content %}
+                {% block hp_main %}
 				<div class="post">
 
 					<div class="post-title"><h2><a href="#">Template Information</a></h2></div>
@@ -117,9 +118,11 @@
 					</div>
 				
 				</div>
+                {% endblock %}
 
 				<div class="content-separator"></div>
 
+                {% block hp_latest %}
 				<div class="post">
 
 					<a href="#"><img src="{{ STATIC_URL }}design/news-image-small-1.jpg" alt="" class="left bordered" /></a>
@@ -151,6 +154,7 @@
 				</div>
 
 				<div class="content-separator"></div>
+                {% endblock %}
 				
                 {% endblock %}
 			</div>
