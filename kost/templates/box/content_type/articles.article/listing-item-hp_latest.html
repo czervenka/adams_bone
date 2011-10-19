@@ -1,0 +1,19 @@
+<div class="post">
+
+    {% if object.photo %}
+        {% load photos %}
+        {% img article_listing for object.photo as image %}
+        <a href="{{ object.get_absolute_url }}"><img src="{{ image.url }}" alt="{{ article.title }}" class="left bordered" /></a>
+    {% endif %}
+
+    <h3><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h3>
+    {% render object.description %}
+
+    <a href="{{ object.get_absolute_url }}" class="more">Read more &#187;</a>
+
+    <div class="clearer">&nbsp;</div>
+
+</div>
+
+<div class="content-separator"></div>
+

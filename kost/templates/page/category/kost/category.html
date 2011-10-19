@@ -1,0 +1,13 @@
+{% extends "page/base.html" %}
+
+{% block hp_main %}
+    {% listing 1 for '' with descendents as listings %}
+    {% box listing-item-hp_main for listings.0.target %}{% endbox %}
+{% endblock %}
+
+{% block hp_latest %}
+    {% listing 3 from 2 for '' with descendents as listings %}
+    {% for listing in listings %}
+        {% box listing-item-hp_latest for listing.target %}{% endbox %}
+    {% endfor %}
+{% endblock %}

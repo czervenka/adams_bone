@@ -1,0 +1,22 @@
+
+<div class="post">
+
+    <div class="post-title"><h2><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h2></div>
+
+    <div class="post-date">{{ object.publish_from|date:"d.m.Y" }} by {{ object.authors.all|join:", " }}</div>
+
+    <div class="post-body">
+
+        {% if object.photo %}
+            {% load photos %}
+            {% img article_head for object.photo as image %}
+            <p><a href="{{ object.get_absolute_url }}"><img src="{{ image.url }}" alt="{{ article.title }}" class="bordered" /></a></p>
+        {% endif %}
+
+        {% render object.description %}
+
+        <a href="{{ object.get_absolute_url }}" class="more">Read more &#187;</a>
+
+    </div>
+
+</div>
