@@ -8,11 +8,13 @@
 </head>
 
 <body>
+    {% block page_title %}{{ CURRENT_SITE.name|capfirst }}{% endblock %}
     {% block category_title %}{{ category.title|capfirst }}{% endblock %}
 <ul>
 {% block main_menu %}
         {% menu_item "" "Homepage" "/" 0 %}
         {% menu_item "/test" "Testovací rubrika" %}
+        {% menu_item "/contact-us" "Contact us" %}
 {% endblock %}
 </ul>
 

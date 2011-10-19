@@ -2,7 +2,11 @@
 {% block content %}
         <h1>{{ category.title|capfirst }}</h1>
 
-        {% render category.description %}
+        <div class="post">
+            <div class="post-body">
+                {% render category.description %}
+            </div>
+        </div>
 
         {% listing 10 for category with descendents as articles %}
 
