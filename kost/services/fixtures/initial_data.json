@@ -21,8 +21,8 @@
         "pk": 1, 
         "model": "sites.site", 
         "fields": {
-            "domain": "adams_bone_url",
-            "name": "adams_bone_title"
+            "domain": "www.adamova-kost.cz",
+            "name": "Adamova kost"
         }
     }, 
     {
@@ -31,10 +31,10 @@
         "fields": {
             "tree_parent": null, 
             "description": "", 
-            "title": "adams_bone_title",
+            "title": "Adamova kost",
             "site": 1, 
             "tree_path": "", 
-            "slug": "adams_bone_slug"
+            "slug": "kost"
         }
     },
     {

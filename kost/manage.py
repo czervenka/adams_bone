@@ -12,13 +12,13 @@ from django.core.management import execute_manager
 
 # if the project directory is not in python path, add it there to be able to import czmag
 try:
-    import adams_bone_package
+    import kost
 except ImportError:
     import sys
     import traceback
     from os.path import dirname, realpath
     source_dir = dirname(dirname(realpath(traceback.extract_stack()[-1][0])))
-    sys.stderr.write("Warning: Could not find package 'adams_bone_package' . Inserting directory '%s' to your python path.\n" % source_dir)
+    sys.stderr.write("Warning: Could not find package 'kost' . Inserting directory '%s' to your python path.\n" % source_dir)
     sys.path.insert(0, source_dir)
 
 try:

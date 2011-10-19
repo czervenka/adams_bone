@@ -1,7 +1,7 @@
 import logging
 from os.path import join
 import sys
-from adams_bone_package.settings import PROJECT_ROOT, LOGGING
+from kost.settings import PROJECT_ROOT, LOGGING
 
 DEBUG = True
 CRON_RUNNER_HOSTNAMES = ('localhost',)
@@ -39,7 +39,7 @@ else:
 
 # DEBUG TOOLBAR
 if DEBUG and SHOW_DEBUG_TOOLBAR:
-    from adams_bone_package.settings.enable_debug_toolbar import *
+    from kost.settings.enable_debug_toolbar import *
 
 INTERNAL_IPS = ('127.0.0.1',)
 

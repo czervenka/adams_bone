@@ -1,4 +1,4 @@
-# Django settings for adams_bone_package project.
+# Django settings for kost project.
 
 import logging
 from os.path import join, dirname
@@ -73,8 +73,8 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'adams_bone_package.services.middleware.ExceptionLoggingMiddleware',
-    'adams_bone_package.services.middleware.SetRemoteAddrFromForwardedFor',
+    'kost.services.middleware.ExceptionLoggingMiddleware',
+    'kost.services.middleware.SetRemoteAddrFromForwardedFor',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -82,7 +82,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.transaction.TransactionMiddleware',
 )
 
-ROOT_URLCONF = 'adams_bone_package.urls'
+ROOT_URLCONF = 'kost.urls'
 
 TEMPLATE_DIRS = (
     join(PROJECT_ROOT, 'templates'),
@@ -93,7 +93,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.auth',
     'django.core.context_processors.request',
     'ella.newman.context_processors.newman_media',
-    'adams_bone_package.services.context_processors.base_vars',
+    'kost.services.context_processors.base_vars',
 )
 
 DEFAULT_MARKUP = 'markdown'
@@ -120,7 +120,7 @@ INSTALLED_APPS = (
     'ella.ellatagging',
 
     'djangomarkup',
-    'adams_bone_package.services',
+    'kost.services',
 )
 
 DOUBLE_RENDER = False
@@ -135,7 +135,7 @@ LOGIN_REDIRECT_URL = '/ucty/profil'
 CRON_RUNNER_HOSTNAMES = ('localhost',)
 
 LOGGING = {
-    'filename': '/var/log/adams_bone_package.log',
+    'filename': '/var/log/kost.log',
     'level': logging.WARNING,
     'version': 1,
 }

@@ -5,21 +5,21 @@ local.py - settings specific to an installation (this should never be saved in r
 """
 from os.path import dirname, join, exists
 import logging
-from adams_bone_package.settings.base import *
+from kost.settings.base import *
 
 PATH = dirname(__file__)
-SERVER_CONFIGURATION_FILE = '/etc/adams_bone_package/conf.py'
+SERVER_CONFIGURATION_FILE = '/etc/kost/conf.py'
 
 # server-specific settings
 if exists(SERVER_CONFIGURATION_FILE):
     import imp
-    imp.load_source('adams_bone_package.settings.system', SERVER_CONFIGURATION_FILE)
-    from adams_bone_package.settings.system import *
+    imp.load_source('kost.settings.system', SERVER_CONFIGURATION_FILE)
+    from kost.settings.system import *
 
 # finally local settings overides all
 # overrides anything
 if exists(join(PATH, 'local.py')):
-    from adams_bone_package.settings.local import *
+    from kost.settings.local import *
 
 logging.basicConfig(
         **LOGGING

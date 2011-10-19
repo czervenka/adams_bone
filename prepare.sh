@@ -1,6 +1,6 @@
-url="www.kost.cz"
-title="Kostička elly"
-slug="kosticka-elly"
+url="www.adamova-kost.cz"
+title="Adamova kost"
+slug="kost"
 package="kost"
 
 cd "$(dirname $0)"

@@ -1,5 +1,5 @@
 import logging
-from adams_bone_package.settings.base import INSTALLED_APPS, MIDDLEWARE_CLASSES
+from kost.settings.base import INSTALLED_APPS, MIDDLEWARE_CLASSES
 try:
     import debug_toolbar
 except ImportError, e:
