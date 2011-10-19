@@ -1,6 +1,6 @@
 {% extends "page/base.html" %}
 {% block content %}
-        <h1>{{ category.title }}</h1>
+        <h1>{{ category.title|capfirst }}</h1>
 
         {% render category.description %}
 
