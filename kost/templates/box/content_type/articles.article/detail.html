@@ -1,14 +1,20 @@
-<article>
-    <h1><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h1>
+<div class="post">
 
-    {% if object.photo %}
-        {% load photos %}
-        {% img article_head for object.photo as image %}
-        <p><a href=""><img src="{{ image.url }}" alt="{{ article.title }}" /></a></p>
-    {% endif %}
+    <div class="post-title"><h2><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h2></div>
 
-    <summary>{% render object.description %}</summary>
-    <details>{% render object.content.content %}</details>
-    <aside><small>vytvořeno: {{ object.publish_from|date:"d.m.Y" }}</small></aside>
-    <aside><small>autoři: {{ object.authors.all|join:", " }}</small></aside>
-</article>
+    <div class="post-date">{{ object.publish_from|date }} by {{ object.authors.all|join:", " }}</div>
+
+    <div class="post-body">
+
+        {% if object.photo %}
+            {% load photos %}
+            {% img article_head for object.photo as image %}
+            <p><a href="{{ object.get_absolute_url }}"><img src="{{ image.url }}" alt="{{ article.title }}" class="bordered" /></a></p>
+        {% endif %}
+
+        <blockquote>{% render object.description %}</blockquote>
+        {% render object.get_text %}
+
+    </div>
+
+</div>
