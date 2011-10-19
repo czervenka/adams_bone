@@ -7,7 +7,7 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/styles/style.css" media="screen" />
-	<title>Website Template: Simple Magazine - Two Columns (demo)</title>
+    <title>{% block html_title %}Website Template: Simple Magazine - Two Columns (demo){% endblock %}</title>
 </head>
 
 <body id="top">
@@ -46,7 +46,7 @@
 
 			<div id="site-title">
 
-				<h1><a href="#">Simple Magazine</a> <span> / News</span></h1>
+                <h1>{% block category_title %}<a href="#">Simple Magazine</a> <span> / News</span>{% endblock %}</h1>
 
 			</div>
 
@@ -55,12 +55,14 @@
 				<div id="main-nav">
 
 					<ul class="tabbed">
+                        {% block main_menu %}
 						<li class="current-tab"><a href="#">News</a></li>
 						<li><a href="#">Politics</a></li>
 						<li><a href="#">Culture</a></li>
 						<li><a href="#">Sport</a></li>
 						<li><a href="#">Debate</a></li>
 						<li><a href="#">Entertainment</a></li>
+                        {% endblock %}
 					</ul>
 
 					<div class="clearer">&nbsp;</div>
@@ -70,12 +72,14 @@
 				<div id="sub-nav">
 
 					<ul class="tabbed">
+                        {% block second_menu %}
 						<li><a href="index.html">Frontpage</a></li>
 						<li><a href="style-demo.html">Style Demo</a></li>
 						<li class="current-tab"><a href="two-columns.html">Two Columns</a></li>
 						<li><a href="single-column.html">Single Column</a></li>						
 						<li><a href="archives.html">Archives</a></li>
 						<li><a href="empty-page.html">Empty Page</a></li>
+                        {% endblock %}
 					</ul>
 
 					<div class="clearer">&nbsp;</div>
@@ -89,7 +93,7 @@
 		<div class="main" id="main-two-columns">
 
 			<div class="left" id="main-left">
-
+                {% block content %}
 				<div class="post">
 
 					<div class="post-title"><h2><a href="#">Template Information</a></h2></div>
@@ -148,6 +152,7 @@
 
 				<div class="content-separator"></div>
 				
+                {% endblock %}
 			</div>
 
 			<div class="right sidebar" id="sidebar">

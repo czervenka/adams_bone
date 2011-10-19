@@ -4,11 +4,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block html_title %}{{ CURRENT_SITE.name }}{% endblock %}</title>
+    <title>{% block html_title %}{{ CURRENT_SITE.name|capfirst }}{% endblock %}</title>
 </head>
 
 <body>
-    {% block category_title %}{{ category.title }}{% endblock %}
+    {% block category_title %}{{ category.title|capfirst }}{% endblock %}
 <ul>
 {% block main_menu %}
         {% menu_item "" "Homepage" "/" 0 %}
