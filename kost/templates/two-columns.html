@@ -7,7 +7,7 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/styles/style.css" media="screen" />
-	<title>Website Template: Simple Magazine (demo)</title>
+	<title>Website Template: Simple Magazine - Two Columns (demo)</title>
 </head>
 
 <body id="top">
@@ -39,7 +39,7 @@
 		<div id="header">
 
 			<div class="right" id="toolbar">
-				Text size <a href="#" title="Larger text"><img src="{{ STATIC_URL }}images/icon-plus.gif" width="20" height="20" alt="" /></a> <a href="#" title="Smaller text"><img src="{{ STATIC_URL }}design/{{ STATIC_URL }}images/icon-minus.gif" width="20" height="20" alt="" /></a>
+				Text size <a href="#" title="Larger text"><img src="{{ STATIC_URL }}images/icon-plus.gif" width="20" height="20" alt="" /></a> <a href="#" title="Smaller text"><img src="{{ STATIC_URL }}images/icon-minus.gif" width="20" height="20" alt="" /></a>
 			</div>
 
 			<div class="clearer">&nbsp;</div>
@@ -70,10 +70,10 @@
 				<div id="sub-nav">
 
 					<ul class="tabbed">
-						<li class="current-tab"><a href="index.html">Frontpage</a></li>
+						<li><a href="index.html">Frontpage</a></li>
 						<li><a href="style-demo.html">Style Demo</a></li>
-						<li><a href="two-columns.html">Two Columns</a></li>
-						<li><a href="single-column.html">Single Column</a></li>
+						<li class="current-tab"><a href="two-columns.html">Two Columns</a></li>
+						<li><a href="single-column.html">Single Column</a></li>						
 						<li><a href="archives.html">Archives</a></li>
 						<li><a href="empty-page.html">Empty Page</a></li>
 					</ul>
@@ -86,7 +86,7 @@
 
 		</div>
 
-		<div class="main" id="main-three-columns">
+		<div class="main" id="main-two-columns">
 
 			<div class="left" id="main-left">
 
@@ -116,51 +116,9 @@
 
 				<div class="content-separator"></div>
 
-				<div class="col3 left">
-					<div class="column-content">
-
-						<div class="post">
-							<p><a href="#"><img src="{{ STATIC_URL }}design/news-image-med-1.jpg" alt="" class="bordered" /></a></p>
-							<h4><a href="#">Curabitur justo arcu</a></h4>
-							Bibendum at bibendum in, semper nec ibh.
-						</div>
-
-					</div>
-				</div>
-
-				<div class="col3 col3-mid left">
-					<div class="column-content">
-
-						<div class="post">
-							<p><a href="#"><img src="{{ STATIC_URL }}design/news-image-med-2.jpg" alt="" class="bordered" /></a></p>
-							<h4><a href="#">Donec sodales</a></h4>
-							Duis risus lectus, gravida eu scelerisque.
-						</div>
-
-					</div>
-				</div>
-
-				<div class="col3 right">
-					<div class="column-content">
-
-						<div class="post">
-							<p><a href="#"><img src="{{ STATIC_URL }}design/news-image-med-3.jpg" alt="" class="bordered" /></a></p>
-							<h4><a href="#">Donec rhoncus</a></h4>
-							Donec eget congue libero.
-						</div>
-
-					</div>
-				</div>
-
-				<div class="clearer">&nbsp;</div>
-				
-			</div>
-
-			<div class="left sidebar" id="sidebar-1">
-
 				<div class="post">
 
-					<p><a href="#"><img src="{{ STATIC_URL }}design/news-image-small-1.jpg" alt="" class="bordered" /></a></p>
+					<a href="#"><img src="{{ STATIC_URL }}design/news-image-small-1.jpg" alt="" class="left bordered" /></a>
 
 					<h3><a href="#">Article title</a></h3>
 
@@ -168,13 +126,15 @@
 
 					<a href="#" class="more">Read more &#187;</a>
 
+					<div class="clearer">&nbsp;</div>
+
 				</div>
 
 				<div class="content-separator"></div>
 
 				<div class="post">
 
-					<p><a href="#"><img src="{{ STATIC_URL }}design/news-image-small-2.jpg" alt="" class="bordered" /></a></p>
+					<a href="#"><img src="{{ STATIC_URL }}design/news-image-small-2.jpg" alt="" class="left bordered" /></a>
 
 					<h3><a href="#">Second Article Title</a></h3>
 
@@ -182,23 +142,15 @@
 
 					<a href="#" class="more">Read more &#187;</a>
 
+					<div class="clearer">&nbsp;</div>
+
 				</div>
 
 				<div class="content-separator"></div>
-
-				<div class="post">
-
-					<h3><a href="#">Third title</a></h3>
-
-					<p>Sed auctor hendrerit eros eu eleifend. Cras hendrerit iaculis sodales. Pellentesque interdum rhoncus magna.</p>
-
-					<a href="#" class="more">Read more &#187;</a>
-
-				</div>				
-
+				
 			</div>
 
-			<div class="right sidebar" id="sidebar-2">
+			<div class="right sidebar" id="sidebar">
 
 				<div class="section">
 
